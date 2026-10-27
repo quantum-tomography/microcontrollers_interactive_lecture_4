@@ -91,7 +91,7 @@
                 <h1 class="text-lg md:text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                     PIC Microcontroller Simulator
                 </h1>
-                <p class="text-xs text-slate-400 font-mono-code hidden sm:block">Harvard Architecture Architecture Simulation & Interactive Lecture</p>
+                <p class="text-xs text-slate-400 font-mono-code hidden sm:block">Harvard Architecture Simulation & Interactive Lecture</p>
             </div>
         </div>
 
@@ -106,7 +106,8 @@
             <!-- Reset Simulation State -->
             <button id="resetSimBtn" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-rose-600/20 text-rose-300 hover:bg-rose-600/30 border border-rose-500/30 transition flex items-center space-x-1">
                 <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
-                <span class="hidden sm:inline">Reset System</span>
+                <span class="hidden sm:inline" data-lang-en="Reset System">Reset System</span>
+                <span class="hidden sm:inline hidden" data-lang-bg="Рестартиране на системата">Рестартиране на системата</span>
             </button>
         </div>
     </header>
@@ -121,7 +122,7 @@
                 <div class="flex items-center space-x-2">
                     <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
                     <h2 class="text-sm font-semibold tracking-wide text-slate-200">
-                        <span data-lang-en="System Diagram (PIC16 Family Standard)">Block Diagram (PIC Microcontroller Architecture)</span>
+                        <span data-lang-en="Block Diagram (PIC Microcontroller Architecture)">Block Diagram (PIC Microcontroller Architecture)</span>
                         <span data-lang-bg="Блокова схема на PIC-микроконтролер" class="hidden">Блокова схема на PIC-микроконтролер</span>
                     </h2>
                 </div>
@@ -212,7 +213,8 @@
                         <text x="170" y="85" fill="#60a5fa" font-size="15" font-weight="bold" text-anchor="middle" class="lang-node-en">Program Memory</text>
                         <text x="170" y="85" fill="#60a5fa" font-size="15" font-weight="bold" text-anchor="middle" class="lang-node-bg hidden">Програмна памет</text>
                         <text x="170" y="115" fill="#94a3b8" font-size="13" font-weight="600" text-anchor="middle">OTP / EPROM / FLASH</text>
-                        <text x="170" y="140" fill="#64748b" font-size="11" text-anchor="middle">14-bit Instructions</text>
+                        <text x="170" y="140" fill="#64748b" font-size="11" text-anchor="middle" class="lang-node-en">14-bit Instructions</text>
+                        <text x="170" y="140" fill="#64748b" font-size="11" text-anchor="middle" class="lang-node-bg hidden">14-битови инструкции</text>
                     </g>
 
                     <!-- 2. Data Memory RAM Block -->
@@ -221,7 +223,8 @@
                         <text x="610" y="88" fill="#60a5fa" font-size="15" font-weight="bold" text-anchor="middle" class="lang-node-en">Data Memory</text>
                         <text x="610" y="88" fill="#60a5fa" font-size="15" font-weight="bold" text-anchor="middle" class="lang-node-bg hidden">Памет за данни</text>
                         <text x="610" y="118" fill="#94a3b8" font-size="14" font-weight="bold" text-anchor="middle">RAM</text>
-                        <text x="610" y="142" fill="#64748b" font-size="11" text-anchor="middle">File Registers & SFRs</text>
+                        <text x="610" y="142" fill="#64748b" font-size="11" text-anchor="middle" class="lang-node-en">File Registers & SFRs</text>
+                        <text x="610" y="142" fill="#64748b" font-size="11" text-anchor="middle" class="lang-node-bg hidden">Регистри за данни и SFR</text>
                     </g>
 
                     <!-- 3. CPU Core Block -->
@@ -233,7 +236,8 @@
                         <text x="480" y="340" fill="#f87171" font-size="18" font-weight="bold" text-anchor="middle" class="lang-node-bg hidden">процесор</text>
                         <text x="480" y="375" fill="#ef4444" font-size="20" font-weight="extrabold" text-anchor="middle">(CPU)</text>
                         <rect x="405" y="405" width="150" height="35" rx="5" fill="#292524" stroke="#78716c" stroke-dasharray="3 3"/>
-                        <text x="480" y="427" fill="#d6d3d1" font-size="11" font-weight="semibold" text-anchor="middle">ALU & W Register</text>
+                        <text x="480" y="427" fill="#d6d3d1" font-size="11" font-weight="semibold" text-anchor="middle" class="lang-node-en">ALU & W Register</text>
+                        <text x="480" y="427" fill="#d6d3d1" font-size="11" font-weight="semibold" text-anchor="middle" class="lang-node-bg hidden">АЛУ и W регистър</text>
                     </g>
 
                     <!-- 4. Reset & Power Control Block (POR, BOR, WDT, etc) -->
@@ -283,7 +287,8 @@
                         <rect x="520" y="530" width="130" height="55" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
                         <text x="585" y="555" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle" class="lang-node-en">Interrupts</text>
                         <text x="585" y="555" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle" class="lang-node-bg hidden">Прекъсвания</text>
-                        <text x="585" y="573" fill="#94a3b8" font-size="10" text-anchor="middle">INT Controller</text>
+                        <text x="585" y="573" fill="#94a3b8" font-size="10" text-anchor="middle" class="lang-node-en">INT Controller</text>
+                        <text x="585" y="573" fill="#94a3b8" font-size="10" text-anchor="middle" class="lang-node-bg hidden">Контролер INT</text>
                     </g>
 
                     <!-- 7. I/O Ports Container -->
@@ -335,7 +340,8 @@
                     <!-- 8. Peripherals Container (Bottom Section) -->
                     <g class="component-block" id="node-peripherals">
                         <rect x="60" y="605" width="860" height="25" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4 4"/>
-                        <text x="490" y="622" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle" class="lang-node-en">Peripherals (Периферия)</text>
+                        <text x="490" y="622" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle" class="lang-node-en">Peripherals</text>
+                        <text x="490" y="622" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle" class="lang-node-bg hidden">Периферия</text>
                     </g>
 
                     <!-- Animated Signal Pulse Elements (hidden by default) -->
@@ -430,26 +436,33 @@
                         </p>
                     </div>
 
-<!-- Highlighted Box from textbook image text -->
-<div class="bg-amber-950/40 border border-amber-500/40 p-3.5 rounded-lg text-amber-200/90 text-xs leading-relaxed space-y-2">
-    <div class="font-bold text-amber-400 flex items-center space-x-1">
-        <i data-lucide="alert-triangle" class="w-4 h-4"></i>
-        <span>Core Concept: One-Time Programmable (OTP) MCUs</span>
-    </div>
-    <p class="italic bg-amber-900/30 p-2.5 stroke-amber-700/40 rounded border border-amber-800/50">
-        These chips rely on PROM memory, meaning they can only be flashed once. The major drawback is that any coding mistake permanently bricks the device. As a result, OTP microcontrollers are reserved for high-volume manufacturing only after the firmware has been thoroughly audited and proven solid."
-    </p>
-    <p class="text-slate-300">
-        <strong class="text-amber-300 font-semibold">Practical Takeaway:</strong>
-        <span>
-            Because OTP microcontrollers are permanently locked after their first burn, they carry high risk during early development but offer significant unit-cost savings in large production runs once the code is finalized. Modern microcontrollers typically feature re-flashable FLASH memory to avoid this limitation during prototyping.
-        </span>
-    </p>
-</div>
+                    <!-- Highlighted Box from textbook image text -->
+                    <div class="bg-amber-950/40 border border-amber-500/40 p-3.5 rounded-lg text-amber-200/90 text-xs leading-relaxed space-y-2">
+                        <div class="font-bold text-amber-400 flex items-center space-x-1">
+                            <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+                            <span data-lang-en="Core Concept: One-Time Programmable (OTP) MCUs">Ключово понятие: Микроконтролери с PROM (OTP)</span>
+                            <span data-lang-bg="Ключово понятие: Микроконтролери с PROM (OTP)" class="hidden">Ключово понятие: Микроконтролери с PROM (OTP)</span>
+                        </div>
+                        <p class="italic bg-amber-900/30 p-2.5 stroke-amber-700/40 rounded border border-amber-800/50">
+                            <span data-lang-en="&quot;Essentially, these chips rely on PROM memory, meaning they can only be flashed once. The major drawback is that any coding mistake permanently bricks the device. As a result, OTP microcontrollers are reserved for high-volume manufacturing only after the firmware has been thoroughly audited and proven solid.&quot;">
+                                &quot;Всъщност, тук става въпрос за микроконтролери с PROM-памет, които веднъж програмирани не позволяват препрограмиране. Неудобното при тях е, че ако е допусната грешка в програмата тя не може да бъде коригирана, т.е. микроконтролера става неизползваем. Такива микроконтролери са подходящи най-вече за серийни производства, след като програмата е многократно изпитана и утвърдена.&quot;
+                            </span>
+                        </p>
+                        <p class="text-slate-300">
+                            <strong class="text-amber-300 font-semibold" data-lang-en="Practical Takeaway:">Превод и същност:</strong>
+                            <strong class="text-amber-300 font-semibold hidden" data-lang-bg="Превод и същност:">Превод и същност:</strong>
+                            <span data-lang-en="Because OTP microcontrollers are permanently locked after their first burn, they carry high risk during early development but offer significant unit-cost savings in large production runs once the code is finalized. Modern microcontrollers typically feature re-flashable FLASH memory to avoid this limitation during prototyping.">
+                                PROM/OTP (One-Time Programmable) микроконтролерите не могат да се променят след първоначално записване. Въпреки риска при прототипиране, те драстично намаляват производствената цена за масово производство след пълно тестване. Модерните чипове използват FLASH памет за препрограмиране.
+                            </span>
+                        </p>
+                    </div>
 
                     <!-- Harvard Architecture Points -->
                     <div class="space-y-2">
-                        <h4 class="font-semibold text-slate-200 text-xs uppercase tracking-wider" data-lang-en="Key Architectural Elements">Основни архитектурни елементи</h4>
+                        <h4 class="font-semibold text-slate-200 text-xs uppercase tracking-wider">
+                            <span data-lang-en="Key Architectural Elements">Основни архитектурни елементи</span>
+                            <span data-lang-bg="Основни архитектурни елементи" class="hidden">Основни архитектурни елементи</span>
+                        </h4>
                         
                         <div class="grid grid-cols-1 gap-2 text-xs">
                             <div class="p-2.5 bg-slate-900/50 rounded border border-slate-700">
@@ -494,7 +507,8 @@
                         <div class="p-3 bg-slate-900/80 rounded-lg border border-amber-500/30">
                             <div class="flex justify-between items-center mb-1">
                                 <span class="font-bold text-amber-400 text-sm">EPROM (Erasable PROM)</span>
-                                <span class="bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded text-[10px]">UV Erasable</span>
+                                <span class="bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded text-[10px]" data-lang-en="UV Erasable">UV Erasable</span>
+                                <span class="bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded text-[10px] hidden" data-lang-bg="UV изтриваема">UV изтриваема</span>
                             </div>
                             <p class="text-slate-300">
                                 <span data-lang-en="Features a quartz window on the chip package. Can be erased by exposing to ultraviolet (UV) light for 15-20 minutes, then reprogrammed.">
@@ -507,7 +521,8 @@
                         <div class="p-3 bg-slate-900/80 rounded-lg border border-emerald-500/30">
                             <div class="flex justify-between items-center mb-1">
                                 <span class="font-bold text-emerald-400 text-sm">FLASH Memory</span>
-                                <span class="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded text-[10px]">Modern Standard</span>
+                                <span class="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded text-[10px]" data-lang-en="Modern Standard">Modern Standard</span>
+                                <span class="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded text-[10px] hidden" data-lang-bg="Съвременен стандарт">Съвременен стандарт</span>
                             </div>
                             <p class="text-slate-300">
                                 <span data-lang-en="Electrically erasable in-circuit (ICSP). Supports thousands of write/erase cycles. Standard for prototyping and modern microcontrollers.">
@@ -518,10 +533,21 @@
 
                         <!-- RAM vs EEPROM -->
                         <div class="p-3 bg-slate-900/80 rounded-lg border border-cyan-500/30">
-                            <span class="font-bold text-cyan-400 text-sm">RAM vs Data EEPROM</span>
+                            <span class="font-bold text-cyan-400 text-sm" data-lang-en="RAM vs Data EEPROM">RAM vs Data EEPROM</span>
+                            <span class="font-bold text-cyan-400 text-sm hidden" data-lang-bg="RAM срещу EEPROM за данни">RAM срещу EEPROM за данни</span>
                             <ul class="list-disc list-inside mt-1 space-y-1 text-slate-300">
-                                <li><strong class="text-slate-200">RAM (Памет за данни RAM):</strong> Volatile, fast 8-bit registers used for temporary variables during operation.</li>
-                                <li><strong class="text-slate-200">EEPROM (Памет за данни EEPROM):</strong> Non-volatile memory for retaining user settings/calibration even when power is turned off.</li>
+                                <li>
+                                    <strong class="text-slate-200" data-lang-en="RAM (Data Memory RAM):">RAM (Data Memory RAM):</strong>
+                                    <strong class="text-slate-200 hidden" data-lang-bg="RAM (Памет за данни RAM):">RAM (Памет за данни RAM):</strong>
+                                    <span data-lang-en=" Volatile, fast 8-bit registers used for temporary variables during operation."> Volatile, fast 8-bit registers used for temporary variables during operation.</span>
+                                    <span data-lang-bg=" Оперативна памет, бързи 8-битови регистри за временни променливи по време на работа." class="hidden"> Оперативна памет, бързи 8-битови регистри за временни променливи по време на работа.</span>
+                                </li>
+                                <li>
+                                    <strong class="text-slate-200" data-lang-en="EEPROM (Data Memory EEPROM):">EEPROM (Data Memory EEPROM):</strong>
+                                    <strong class="text-slate-200 hidden" data-lang-bg="EEPROM (Памет за данни EEPROM):">EEPROM (Памет за данни EEPROM):</strong>
+                                    <span data-lang-en=" Non-volatile memory for retaining user settings/calibration even when power is turned off."> Non-volatile memory for retaining user settings/calibration even when power is turned off.</span>
+                                    <span data-lang-bg=" Енергонезависима памет за запазване на потребителски настройки и калибрация при изключено захранване." class="hidden"> Енергонезависима памет за запазване на потребителски настройки и калибрация при изключено захранване.</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -531,7 +557,7 @@
                 <div id="tab-reset" class="tab-content hidden space-y-4 text-sm text-slate-300">
                     <h3 class="font-bold text-pink-400 text-base flex items-center space-x-2">
                         <i data-lucide="shield-alert" class="w-4 h-4"></i>
-                        <span data-lang-en="Reset & Control Block (Блок за НУ и Контрол)">Reset & Control Block (Блок за НУ и Контрол)</span>
+                        <span data-lang-en="Reset & Control Block">Reset & Control Block</span>
                         <span data-lang-bg="Блок за НУ и Контрол" class="hidden">Блок за НУ и Контрол</span>
                     </h3>
 
@@ -552,7 +578,7 @@
                         </div>
                         <div class="p-2.5 bg-slate-900/70 rounded border border-pink-500/30">
                             <span class="font-bold text-pink-300">WDT (Watchdog Timer):</span>
-                            <span data-lang-en=" An independent RC oscillator timer. If code gets stuck and fails to clear WDT before timeout, WDT forces CPU reset."> Независим таймер. Ако софтуерът блокира и не "храни" кучето навреме, WDT рестартира процесора.</span>
+                            <span data-lang-en=" An independent RC oscillator timer. If code gets stuck and fails to clear WDT before timeout, WDT forces CPU reset."> Независим таймер. Ако софтуерът блокира и не &quot;храни&quot; кучето навреме, WDT рестартира процесора.</span>
                         </div>
                         <div class="p-2.5 bg-slate-900/70 rounded border border-pink-500/30">
                             <span class="font-bold text-pink-300">OST (Oscillator Start-up Timer):</span>
@@ -582,19 +608,23 @@
                         <div class="p-3.5 bg-slate-900/80 rounded-lg border border-slate-700 space-y-2">
                             <p class="font-semibold text-slate-200 text-xs">
                                 1. <span data-lang-en="What happens if a programming bug is found in an OTP (PROM) microcontroller after flashing?">Какво се случва, ако се допусне грешка в програмата при OTP (PROM) микроконтролер?</span>
+                                <span data-lang-bg="Какво се случва, ако се допусне грешка в програмата при OTP (PROM) микроконтролер?" class="hidden">Какво се случва, ако се допусне грешка в програмата при OTP (PROM) микроконтролер?</span>
                             </p>
                             <div class="space-y-1 text-xs">
                                 <label class="flex items-center space-x-2 p-1.5 rounded hover:bg-slate-800 cursor-pointer">
                                     <input type="radio" name="q1" value="a" class="accent-cyan-500">
-                                    <span>A) It can be erased with UV light.</span>
+                                    <span data-lang-en="A) It can be erased with UV light.">A) It can be erased with UV light.</span>
+                                    <span data-lang-bg="А) Може да се изтрие с UV светлина." class="hidden">А) Може да се изтрие с UV светлина.</span>
                                 </label>
                                 <label class="flex items-center space-x-2 p-1.5 rounded hover:bg-slate-800 cursor-pointer">
                                     <input type="radio" name="q1" value="b" class="accent-cyan-500">
-                                    <span class="text-emerald-300 font-medium">B) It cannot be corrected and the chip becomes unusable (scrap).</span>
+                                    <span class="text-emerald-300 font-medium" data-lang-en="B) It cannot be corrected and the chip becomes unusable (scrap).">B) It cannot be corrected and the chip becomes unusable (scrap).</span>
+                                    <span class="text-emerald-300 font-medium hidden" data-lang-bg="Б) Грешката не може да се коригира и чипът става неизползваем.">Б) Грешката не може да се коригира и чипът става неизползваем.</span>
                                 </label>
                                 <label class="flex items-center space-x-2 p-1.5 rounded hover:bg-slate-800 cursor-pointer">
                                     <input type="radio" name="q1" value="c" class="accent-cyan-500">
-                                    <span>C) The Watchdog timer rewrites the code automatically.</span>
+                                    <span data-lang-en="C) The Watchdog timer rewrites the code automatically.">C) The Watchdog timer rewrites the code automatically.</span>
+                                    <span data-lang-bg="В) Watchdog таймерът пренаписва кода автоматично." class="hidden">В) Watchdog таймерът пренаписва кода автоматично.</span>
                                 </label>
                             </div>
                         </div>
@@ -603,19 +633,23 @@
                         <div class="p-3.5 bg-slate-900/80 rounded-lg border border-slate-700 space-y-2">
                             <p class="font-semibold text-slate-200 text-xs">
                                 2. <span data-lang-en="Which bus width carries instructions from Program Flash memory to the CPU in this PIC diagram?">Колко бита е програмната магистрала в показаната схема?</span>
+                                <span data-lang-bg="Колко бита е програмната магистрала в показаната схема?" class="hidden">Колко бита е програмната магистрала в показаната схема?</span>
                             </p>
                             <div class="space-y-1 text-xs">
                                 <label class="flex items-center space-x-2 p-1.5 rounded hover:bg-slate-800 cursor-pointer">
                                     <input type="radio" name="q2" value="8" class="accent-cyan-500">
-                                    <span>A) 8-bit bus</span>
+                                    <span data-lang-en="A) 8-bit bus">A) 8-bit bus</span>
+                                    <span data-lang-bg="А) 8-битова магистрала" class="hidden">А) 8-битова магистрала</span>
                                 </label>
                                 <label class="flex items-center space-x-2 p-1.5 rounded hover:bg-slate-800 cursor-pointer">
                                     <input type="radio" name="q2" value="14" class="accent-cyan-500">
-                                    <span class="text-emerald-300 font-medium">B) 14-bit bus</span>
+                                    <span class="text-emerald-300 font-medium" data-lang-en="B) 14-bit bus">B) 14-bit bus</span>
+                                    <span class="text-emerald-300 font-medium hidden" data-lang-bg="Б) 14-битова магистрала">Б) 14-битова магистрала</span>
                                 </label>
                                 <label class="flex items-center space-x-2 p-1.5 rounded hover:bg-slate-800 cursor-pointer">
                                     <input type="radio" name="q2" value="13" class="accent-cyan-500">
-                                    <span>C) 13-bit bus</span>
+                                    <span data-lang-en="C) 13-bit bus">C) 13-bit bus</span>
+                                    <span data-lang-bg="В) 13-битова магистрала" class="hidden">В) 13-битова магистрала</span>
                                 </label>
                             </div>
                         </div>
@@ -624,25 +658,30 @@
                         <div class="p-3.5 bg-slate-900/80 rounded-lg border border-slate-700 space-y-2">
                             <p class="font-semibold text-slate-200 text-xs">
                                 3. <span data-lang-en="What is the function of the WDT (Watchdog Timer)?">Каква е функцията на WDT (Watchdog Timer)?</span>
+                                <span data-lang-bg="Каква е функцията на WDT (Watchdog Timer)?" class="hidden">Каква е функцията на WDT (Watchdog Timer)?</span>
                             </p>
                             <div class="space-y-1 text-xs">
                                 <label class="flex items-center space-x-2 p-1.5 rounded hover:bg-slate-800 cursor-pointer">
                                     <input type="radio" name="q3" value="a" class="accent-cyan-500">
-                                    <span>A) Converts analog signals to digital values.</span>
+                                    <span data-lang-en="A) Converts analog signals to digital values.">A) Converts analog signals to digital values.</span>
+                                    <span data-lang-bg="А) Преобразува аналогови сигнали в цифрови стойности." class="hidden">А) Преобразува аналогови сигнали в цифрови стойности.</span>
                                 </label>
                                 <label class="flex items-center space-x-2 p-1.5 rounded hover:bg-slate-800 cursor-pointer">
                                     <input type="radio" name="q3" value="b" class="accent-cyan-500">
-                                    <span class="text-emerald-300 font-medium">B) Resets the CPU if software freezes or fails to clear the timer.</span>
+                                    <span class="text-emerald-300 font-medium" data-lang-en="B) Resets the CPU if software freezes or fails to clear the timer.">B) Resets the CPU if software freezes or fails to clear the timer.</span>
+                                    <span class="text-emerald-300 font-medium hidden" data-lang-bg="Б) Рестартира CPU, ако софтуерът блокира или не занули таймера.">Б) Рестартира CPU, ако софтуерът блокира или не занули таймера.</span>
                                 </label>
                                 <label class="flex items-center space-x-2 p-1.5 rounded hover:bg-slate-800 cursor-pointer">
                                     <input type="radio" name="q3" value="c" class="accent-cyan-500">
-                                    <span>C) Generates main clock pulses for the CPU.</span>
+                                    <span data-lang-en="C) Generates main clock pulses for the CPU.">C) Generates main clock pulses for the CPU.</span>
+                                    <span data-lang-bg="В) Генерира основните тактови импулси за CPU." class="hidden">В) Генерира основните тактови импулси за CPU.</span>
                                 </label>
                             </div>
                         </div>
 
                         <button id="submitQuizBtn" class="w-full py-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold rounded-lg text-xs transition shadow-md">
-                            Check Answers
+                            <span data-lang-en="Check Answers">Check Answers</span>
+                            <span data-lang-bg="Провери отговорите" class="hidden">Провери отговорите</span>
                         </button>
                         <div id="quizResult" class="hidden p-3 rounded-lg text-xs font-semibold text-center"></div>
                     </div>
@@ -655,7 +694,8 @@
 
     <!-- Footer -->
     <footer class="bg-slate-950 border-t border-slate-800 p-3 text-center text-xs text-slate-400">
-        Based on Microcontroller Architecture (Фиг. 1.7. Блокова схема на PIC-микроконтролер). Built for educational visual simulation.
+        <span data-lang-en="Based on Microcontroller Architecture (Fig. 1.7. Block diagram of PIC microcontroller). Built for educational visual simulation.">Based on Microcontroller Architecture (Fig. 1.7. Block diagram of PIC microcontroller). Built for educational visual simulation.</span>
+        <span data-lang-bg="Базирано на архитектура на микроконтролери (Фиг. 1.7. Блокова схема на PIC-микроконтролер). Създадено за образователна симулация." class="hidden">Базирано на архитектура на микроконтролери (Фиг. 1.7. Блокова схема на PIC-микроконтролер). Създадено за образователна симулация.</span>
     </footer>
 
     <!-- JavaScript Logic -->
