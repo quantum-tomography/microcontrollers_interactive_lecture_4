@@ -430,23 +430,22 @@
                         </p>
                     </div>
 
-                    <!-- Highlighted Box from textbook image text -->
-                    <div class="bg-amber-950/40 border border-amber-500/40 p-3.5 rounded-lg text-amber-200/90 text-xs leading-relaxed space-y-2">
-                        <div class="font-bold text-amber-400 flex items-center space-x-1">
-                            <i data-lucide="alert-triangle" class="w-4 h-4"></i>
-                            <span data-lang-en="Key Concept: OTP Microcontrollers">Ключово понятие: Микроконтролери с PROM (OTP)</span>
-                            <span data-lang-bg="Ключово понятие: Микроконтролери с PROM (OTP)" class="hidden">Ключово понятие: Микроконтролери с PROM (OTP)</span>
-                        </div>
-                        <p class="italic bg-amber-900/30 p-2.5 stroke-amber-700/40 rounded border border-amber-800/50">
-                            "Всъщност, тук става въпрос за микроконтролери с PROM-памет, които веднъж програмирани не позволяват препрограмиране. Неудобното при тях е, че ако е допусната грешка в програмата тя не може да бъде коригирана, т.е. микроконтролера става неизползваем. Такива микроконтролери са подходящи най-вече за серийни производства, след като програмата е многократно изпитана и утвърдена."
-                        </p>
-                        <p class="text-slate-300">
-                            <strong class="text-amber-300 font-semibold" data-lang-en="Translation & Core takeaway:">Превод и същност:</strong>
-                            <span data-lang-en="PROM/OTP (One-Time Programmable) microcontrollers cannot be modified after initial flashing. While risky during prototyping, they drastically lower production costs for mass production once firmware is fully verified. Modern chips use FLASH memory for re-programmability during development.">
-                                PROM/OTP (One-Time Programmable) микроконтролерите не могат да се променят след първоначално записване. Въпреки риска при прототипиране, те драстично намаляват производствената цена за масово производство след пълно тестване. Модерните чипове използват FLASH памет за препрограмиране.
-                            </span>
-                        </p>
-                    </div>
+<!-- Highlighted Box from textbook image text -->
+<div class="bg-amber-950/40 border border-amber-500/40 p-3.5 rounded-lg text-amber-200/90 text-xs leading-relaxed space-y-2">
+    <div class="font-bold text-amber-400 flex items-center space-x-1">
+        <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+        <span>Core Concept: One-Time Programmable (OTP) MCUs</span>
+    </div>
+    <p class="italic bg-amber-900/30 p-2.5 stroke-amber-700/40 rounded border border-amber-800/50">
+        These chips rely on PROM memory, meaning they can only be flashed once. The major drawback is that any coding mistake permanently bricks the device. As a result, OTP microcontrollers are reserved for high-volume manufacturing only after the firmware has been thoroughly audited and proven solid."
+    </p>
+    <p class="text-slate-300">
+        <strong class="text-amber-300 font-semibold">Practical Takeaway:</strong>
+        <span>
+            Because OTP microcontrollers are permanently locked after their first burn, they carry high risk during early development but offer significant unit-cost savings in large production runs once the code is finalized. Modern microcontrollers typically feature re-flashable FLASH memory to avoid this limitation during prototyping.
+        </span>
+    </p>
+</div>
 
                     <!-- Harvard Architecture Points -->
                     <div class="space-y-2">
